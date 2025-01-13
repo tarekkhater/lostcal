@@ -1,0 +1,130 @@
+.services {
+  width: 100%;
+  /* padding-top: 100px;
+  padding-bottom: 200px; */
+  /* height: 90vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  position: relative;
+}
+
+.services h2 {
+  width: fit-content;
+  margin-bottom: 80px;
+  background-color: var(--bg-btn);
+  padding: 20px 30px;
+  color: var(--main-color);
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px 5px rgba(69, 69, 102, 1);
+  box-shadow: 4px 4px 10px 5px rgba(69, 69, 102, 1);
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+.services h2:hover{
+  background-color: var(--main-color);
+  color: var(--bg-btn);
+}
+
+.services-img-right,
+.services-img-left {
+  width: 400px;
+  position: absolute;
+  z-index: 0;
+}
+
+@media (max-width: 767px) {
+  .services-img-right,
+  .services-img-left {
+    display: none;
+  }
+}
+
+.services-img-right {
+  right: -80px;
+  top: -80px;
+}
+
+.services-img-left {
+  left: -30px;
+  bottom: -100px;
+}
+
+.cards-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 40px;
+}
+
+@media (max-width: 905px) {
+  .cards-container {
+    flex-direction: column;
+  }
+}
+
+.cards-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+  position: relative;
+  background-color: #cdcddb;
+  border-radius: 12px;
+  transition: 0.5s;
+  box-shadow: 8px 8px 15px 0px rgba(21, 21, 40, 1), -8px -8px 15px 0px rgba(21, 21, 40, 1);
+  margin-bottom: 100px;
+}
+
+.cards-container div:hover {
+  background-color: rgba(69, 69, 102, 1);
+}
+
+.cards-container div:hover a {
+  box-shadow: 4px 4px 10px 0px rgba(80, 192, 225, 1), -4px -4px 4px 0px rgba(80, 192, 225, 1);
+  cursor: pointer;
+}
+
+.cards-container div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: var(--main-color);
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(22.5deg);
+  z-index: 0;
+}
+
+.cards-container div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: var(--main-color);
+  height: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-22.5deg);
+  z-index: 0;
+}
+
+.cards-container div a{
+  background-color: var(--main-color);
+  /* padding: 20px 10px; */
+  width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  white-space: pre-line;
+  border-radius: 12px;
+  transition: 0.5s;
+}

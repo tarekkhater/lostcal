@@ -1,0 +1,180 @@
+.user{
+  height: 100vh;
+  background-color: #d9d9d9;
+}
+.userPage{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: calc(100vh); */
+  margin-top: 50px;
+  background-color: #d9d9d9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.userCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+@media (min-width: 1024px){
+  .userCard{
+    flex-direction: row;
+  }
+}
+
+.userData{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.userData span{
+  width: 100px;
+  height: 100px;
+  background-color: #151528;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+.userData h3{
+  color: #151528;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.userInputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.userInput{
+  background-color: #151528;
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  color: white;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* @media {
+  .userInput{
+    width: 100%;
+  }
+} */
+
+.userInput div{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.userInput label{
+  font-size: 20px;
+  font-weight: 400;
+
+}
+
+.userInput input{
+  background-color: #151528;
+  border: none;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+}
+
+.userInput input:focus{
+  outline: none;
+}
+
+.userInput span{
+  background-color: #38a1f1;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #fff;
+}
+
+.userInput span:hover{
+  background-color: #50C0E1;
+}
+
+.userInput i{
+  font-size: 18px;
+}
+
+.changePassword{
+  background-color: #151528;
+  width: 80%;
+  height: 60px;
+  padding: 20px;
+  color: white;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.changePassword .arrowContainer{
+  width: 30px;
+  height: 30px;
+}
+.changePassword .arrowContainer img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px){
+  .buttons{
+    flex-direction: row;
+  }
+}
+
+.buttons a{
+  border: none;
+  background-color: #50C0E1;
+  padding: 20px 100px;
+  border-radius: 16px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.buttons a:first-of-type{
+  background-color: #151528;
+}
+
+.customModal{
+  padding: 100px;
+}

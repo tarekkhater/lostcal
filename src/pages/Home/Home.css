@@ -1,0 +1,7 @@
+.home{
+    /* background: linear-gradient(0deg, rgba(3, 2, 45, 0.4), rgba(3, 2, 45, 0.4)), linear-gradient(0deg, #9c9c9c, #9c9c9c); */
+    background-color: var(--main-color);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}

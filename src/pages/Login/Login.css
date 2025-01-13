@@ -1,0 +1,99 @@
+.login{
+    background-color:#2A2A40;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.login-container{
+    background-color: #F0F0F0;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 2rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50%,1fr));
+}
+.login-container .images{
+    position: relative;
+    border-radius: 2rem;
+}
+.login-container .images .curve{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -6px;
+}
+.login-container .images .title{
+    position: absolute;
+    width: 80%;
+    bottom: 10px;
+    left: 50px;
+}
+.login-container .images .dots{
+    position: absolute;
+    width: 50%;
+    top: 40%;
+}
+.login-container .images .ellipse{
+    position: absolute;
+    width: 80%;
+    right: 0;
+    top: 12%;
+    left: 20%;
+    transform: rotate(-8deg);
+}
+.login-container .images .phone{
+    position: absolute;
+    width: 80%;
+    right:-15%;
+    top: 10%;
+}
+@media (max-width:991px) {
+    .login-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .login-container .images{
+        display: none;
+    }
+}
+.login-container .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form .man-img{
+    width: 100px;
+    margin-bottom: 1rem;
+}
+.form .man-img img{
+    width: 100%;
+}
+.form h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+@media (max-width:991px) {
+    .login-container .form .input-container,
+    .login-container .form button{
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    .form .input-container{
+        width: 80%;
+        height: 60px;
+        font-size: 0.6rem;
+    }
+    .form .input-container img{
+        width: 40px;
+    }
+    .login .form h1{
+        font-size: 3rem;
+    }
+}

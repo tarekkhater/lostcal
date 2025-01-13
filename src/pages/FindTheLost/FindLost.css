@@ -1,0 +1,262 @@
+.find-lost {
+  background-color: #D9D9D9;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+  padding: 50px;
+}
+.loader-overlay{
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: #2A2A40; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  z-index: 9999; 
+}
+
+.test {
+  z-index: 2;
+  padding: 5px 20px;
+  border-radius: 26px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.find-lost-container {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+@media (min-width: 992px) {
+  .find-lost-container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.find-lost-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+
+}
+
+.find-lost-bottom div {
+  width: 40px;
+  height: 40px;
+  background-color: #2a2a40;
+  border-radius: 50%;
+}
+
+.find-lost-left,
+.find-lost-center,
+.find-lost-right {
+  flex-basis: 33.3%;
+}
+
+.find-lost-center {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+@media (min-width: 992px) {
+  .find-lost-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+
+.find-lost-container h2 {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .find-lost-container h2 {
+    text-align: left;
+    font-size: 35px;
+  }
+}
+
+.find-lost-container .find-lost-left p{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 16px;
+  
+}
+
+@media (min-width: 1024px) {
+  .find-lost-container .find-lost-left p {
+    text-align: left;
+    font-size: 18px;
+    margin-left: 35px;
+    text-align: left;
+    width: 85%; 
+  }
+}
+
+.find-lost-row {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.find-lost-row-last {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.find-lost-row-last div {
+  background-color: #bed9e1;
+  display: flex;
+  align-items: start;
+  padding: 8px;
+  border-radius: 16px;
+  height: 100px;
+}
+
+.find-lost-row div {
+  background-color: #bed9e1;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.find-lost-row input {
+  background-color: #bed9e1;
+  border: none;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  padding: 10px 8px;
+}
+
+.find-lost-row input::placeholder {
+  color: black;
+}
+
+.find-lost-row-last textarea {
+  background-color: #bed9e1;
+  border: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  resize: none;
+}
+@media (max-width:400px) {
+  .find-lost-row input{
+    width: 100%;
+    font-size: 0.6rem;
+  }
+
+}
+.find-lost-row-last textarea::placeholder {
+  color: black;
+}
+
+.find-lost-row-last textarea:focus {
+  outline: none;
+}
+
+.find-lost-row input:focus {
+  outline: none;
+}
+
+.input-logo {
+  width: 40px;
+}
+
+
+.find-lost-center img {
+  width: 150px;
+}
+
+.find-lost-center .main-image {
+  width: 250px;
+}
+.find-lost-center .logo{
+  width: 200px;
+}
+.find-lost-right {
+  margin-bottom: 25px;
+}
+
+.find-lost-right-img {
+  background: #9b9b9b99;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 40px;
+  border-radius: 16px;
+  box-shadow: 4px 4px 10px 0px rgba(42, 42, 64, 1), -4px -4px 10px 0px rgba(21, 21, 40, 1);
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (max-width:400px) {
+  .find-lost-right-img {
+    width: 100%;
+  }
+}
+.find-lost-right-img img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.find-lost-submit {
+  background-color: #1c1c36;
+  color: white;
+  padding: 16px 40px;
+  border: none;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-weight: 400;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+@media (max-width:400px) {
+  .find-lost-submit{
+    font-size: 12px;
+    width: 100%;
+  }
+}
+.find-lost-submit:hover{
+  color: #1c1c36;
+  background-color: #bed9e1;
+  font-weight: bold;
+  border: #1c1c36 1px solid;
+}

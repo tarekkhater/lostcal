@@ -1,0 +1,43 @@
+.update-user-data {
+    max-width: 300px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.label-container {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #CAE4EC;
+    border-radius: 1rem;
+}
+
+.label-container .label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.label-container [type="text"] {
+    width: calc(100% - 10px); 
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #CAE4EC;
+    border: none;
+    outline: none;
+}
+
+.update-user-data .update {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.update-user-data button:hover {
+    background-color:#1C1C36;
+    color: #C7C1C1;
+}
