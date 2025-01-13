@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "./FindLost.css";
-import nameImg from "../../assets/images/profile 3.png";
 import ageImg from "../../assets/images/market 1.png";
 import addressImg from "../../assets/images/location 1.png";
 import splatter from "../../assets/images/paint-splat-paint-splashes-design-use-abstract-vector-illus-illustration-85649903 1.png";
@@ -93,21 +92,21 @@ function FindLost() {
                   <div className="find-lost-row">
                     <span>Name</span>
                     <div>
-                      <img className="input-logo" src={nameImg} alt="name-img"/>
+                      <img className="input-logo" src="/profile 3.png" alt="name-img"/>
                       <input type="text" placeholder="Enter name lost person " name="name" value={name} onChange={(e)=>setName(e.target.value)}/>
                     </div>
                   </div>
                   <div className="find-lost-row">
                     <span>Age</span>
                     <div>
-                      <img className="input-logo" src={ageImg} alt="age-img" />
+                      <img className="input-logo" src="/market 1.png" alt="age-img" />
                       <input type="number" placeholder="Enter age for lost person" name="age" value={age} onChange={(e)=>setAge(e.target.value)}/>
                     </div>
                   </div>
                   <div className="find-lost-row-last">
                     <span>Missing Address</span>
                     <div>
-                      <img className="input-logo" src={addressImg} alt="address-img" />
+                      <img className="input-logo" src="/location 1.png" alt="address-img" />
                       <textarea name="address" cols="30" rows="10" placeholder="Enter Address that you lost the person "
                       value={address} onChange={(e)=>setAddress(e.target.value)}></textarea>
                     </div>
@@ -116,13 +115,13 @@ function FindLost() {
               </div>
               <div className="find-lost-center">
                 <div>
-                  <img className="splatter" src={splatter} alt="splatter" />
+                  <img className="splatter" src="/paint-splat-paint-splashes-design-use-abstract-vector-illus-illustration-85649903 1.png" alt="splatter" />
                 </div>
                 <div>
-                  <img className="main-image" src={mainImage} alt="main-img" />
+                  <img className="main-image" src="/undraw_People_search_re_5rre-removebg-preview 1.png" alt="main-img" />
                 </div>
                 <div>
-                  <img className="logo" src={logo} alt="logo" />
+                  <img className="logo" src="/WhatsApp Image 2023-10-07 at 11.03 1.png" alt="logo" />
                   <div className="find-lost-bottom">
                   <div></div>
                   <div></div>
@@ -145,7 +144,7 @@ function FindLost() {
                   {
                     images.length < 5 &&(
                       <label htmlFor="upload-image" style={{ cursor: 'pointer' }}>
-                        <img src={addImage} alt='add-img'/>
+                        <img src="/image-gallery 1.png" alt='add-img'/>
                       </label>
                     )
                   }
@@ -155,14 +154,14 @@ function FindLost() {
                   <div className="find-lost-row">
                     <span>Contact mail</span>
                     <div>
-                      <img className="input-logo" src={emailImg} alt="email-img" />
+                      <img className="input-logo" src="/email 2.png" alt="email-img" />
                       <input type="email" placeholder="Enter contact mail" name="email" value={email} onChange={(e)=>setEmail(e.target.value)} />
                     </div>
                   </div>
                   <div className="find-lost-row">
                     <span>Contact number</span>
                     <div>
-                      <img className="input-logo" src={phone} alt="phone-img"/>
+                      <img className="input-logo" src="/phone-call 2.png" alt="phone-img"/>
                       <input type="text" placeholder="Enter contact number" name="phoneNumber" value={phoneNumber} onChange={(e)=>setPhoneNumber(e.target.value)} pattern="^01[0125][0-9]{8}"/>
                     </div>
                   </div>

@@ -35,28 +35,28 @@ const Signup = () => {
         loading ? <CustomLoader/>:(
             <div className='signup-container'>
                 <div className='disc'>
-                    <img className='background' src='/src/assets/images/signup.png' alt='background'/>
-                    <img className='title' src='/src/assets/images/landing-title.png' alt='title'/>
-                    <img className='dots' src='/src/assets/images/paint-splat-paint-splashes-design-use-abstract-vector-illus-illustration(l).png' alt='dots'/>
+                    <img className='background' src='/signup.png' alt='background'/>
+                    <img className='title' src='/landing-title.png' alt='title'/>
+                    <img className='dots' src='/paint-splat-paint-splashes-design-use-abstract-vector-illus-illustration(l).png' alt='dots'/>
                     <p>Find The Lost <br/> SAVE<br/> The Day</p>
-                    <img className='location' src='/src/assets/images/My_location.png' alt='location'/>
+                    <img className='location' src='/My_location.png' alt='location'/>
                 </div>
                 <form className='form' onSubmit={handleSubmit}>
                     <h1>Welcome !</h1>
                     <div className='input-container'>
-                        <img src='/src/assets/images/profile 1.png'/>
+                        <img src='/profile 1.png'/>
                         <input type='text' required placeholder='Enter your name' name='username' value={username} onChange={(e)=>setUsername(e.target.value)} />
                     </div>
                     <div className='input-container'>
-                        <img src='/src/assets/images/email.png'/>
+                        <img src='/email.png'/>
                         <input type='email' required placeholder='Enter your email' name='email' value={email} onChange={(e)=>setEmail(e.target.value)} />
                     </div>
                     <div className='input-container'>
-                        <img src='/src/assets/images/password.png'/>
+                        <img src='/password.png'/>
                         <input type='password' required placeholder='Enter your password' name='password' value={password} onChange={(e)=>setPassword(e.target.value)} pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" />
                     </div>
                     <div className='input-container'>
-                        <img src='/src/assets/images/password.png'/>
+                        <img src='/password.png'/>
                         <input type='password' required placeholder='Confirm Password' name='confirm password' value={passwordConfirm} onChange={(e)=>setPasswordConfirm(e.target.value)}  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" />
                     </div>
                     <button type='submit' disabled={loading === true}>Sign Up</button>

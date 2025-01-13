@@ -41,18 +41,18 @@ const ChangePassword = () => {
       </div>:
       <div className={styles.main}>
         <div className={styles.leftSide}>
-          <img src={iIcon} alt="icon" />
+          <img src="/lockIcon.png" alt="icon" />
           <h1>Update Password</h1>
           <div className={styles.inputField}>
-            <img src={lock} alt="lock" />
+            <img src="/padlock 1.png" alt="lock" />
             <input type="password" placeholder="Old Password" value={passwordCurrent} onChange={(e)=>setPasswordCurrent(e.target.value)}  />
           </div>
           <div className={styles.inputField}>
-            <img src={lock} alt="lock2" />
+            <img src="/padlock 1.png" alt="lock2" />
             <input type="password" placeholder="New Password" value={password} onChange={(e)=>setPassword(e.target.value)} />
           </div>
           <div className={styles.inputField}>
-            <img src={confirm} alt="conf" />
+            <img src="/confirmation 1.png" alt="conf" />
             <input type="password" placeholder="Confirm New Password" value={passwordConfirm} onChange={(e)=>setPasswordConfirm(e.target.value)} />
           </div>
           <button onClick={handleSubmit}>Change Password</button>

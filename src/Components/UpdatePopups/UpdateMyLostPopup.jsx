@@ -110,7 +110,7 @@ const handleSubmit = async () => {
                         ))}
                         {updatedImages.length < 5 && (
                             <label htmlFor="upload-image" className='add-image-label'>
-                                <img src={addImage} alt='add-img' />
+                                <img src="/image-gallery 1.png" alt='add-img' />
                             </label>
                         )}
                         <input type="file" accept="image/*" id="upload-image" multiple style={{ display: 'none' }} onChange={handleImageChange} />

@@ -32,11 +32,11 @@ const ForgotPassword = () => {
       </div>:
       <div className={styles.main}>
         <div className={styles.leftSide}>
-          <img src={iIcon} alt="icon" />
+          <img src="/iIcon.png" alt="icon" />
           <h1>Forgot Password</h1>
           <p>Enter your email and we will send you a link to reset <br /> your password</p>
           <div className={styles.inputField}>
-            <img src={mail} alt="mail" />
+            <img src="/email 2.png" alt="mail" />
             <input type="email" placeholder="Enter your email" value={email} onChange={(e)=>setEmail(e.target.value)} />
           </div>
           <button onClick={handleSubmit}>Submit</button>

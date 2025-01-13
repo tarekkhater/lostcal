@@ -21,7 +21,7 @@ const NewHeader = ({active}) => {
     return (
         <div className='search-header'>
             <div className='logo'>
-                <img src='/src/assets/images/landing-title.png' alt='logo'/>
+                <img src='/landing-title.png' alt='logo'/>
             </div>
             <div className='navbar'>
                 <ul ref={navRef}>

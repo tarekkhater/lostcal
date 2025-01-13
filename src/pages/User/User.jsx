@@ -63,7 +63,7 @@ const User = () => {
                 <p>Change Password</p>
                 <div className={styles.arrowContainer}>
                   <Link to="/change-password">
-                    <img src="/src/assets/images/next 5.png" alt="arrow"/>
+                    <img src="/next 5.png" alt="arrow"/>
                   </Link>
                 </div>
               </div>

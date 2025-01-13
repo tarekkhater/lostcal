@@ -23,13 +23,13 @@ const Search = () => {
                 <NewHeader active="search"/>
                 <div className='container'>
                     <div className='left-img'>
-                        <img src='/src/assets/images/paint-splat-paint-splashes-design-use-abstract-vector-illus-illustration(l).png' alt='left-img'/>
+                        <img src='/paint-splat-paint-splashes-design-use-abstract-vector-illus-illustration(l).png' alt='left-img'/>
                     </div>
                     <div className='center-side'>
                         <div className='center-img'>
-                            <img src='/src/assets/images/wifi.png' alt='center-img' />
+                            <img src='/wifi.png' alt='center-img' />
                             <div className='search-input'>
-                                <img src='/src/assets/images/loupe 1.png' alt='search'/>
+                                <img src='/loupe 1.png' alt='search'/>
                                 <input type='text' placeholder='Search by the name of your lost person' name='search' value={nameToSearch} onChange={(e)=>setNameToSearch(e.target.value)} />
                             </div>
                             <p>Don't lose hope</p>
@@ -37,10 +37,10 @@ const Search = () => {
                     </div>
                     <div className='right-img'>
                         <div className='first-right-img'>
-                            <img src='/src/assets/images/lovepik-splash-material-png-image(r).png' alt='right-img'/>
+                            <img src='/lovepik-splash-material-png-image(r).png' alt='right-img'/>
                         </div>
                         <div className='second-right-img'>
-                            <img src='/src/assets/images/couple.png' alt='couple-img'/>
+                            <img src='/couple.png' alt='couple-img'/>
                         </div>
                     </div>
                 </div>

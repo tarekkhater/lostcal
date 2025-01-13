@@ -32,18 +32,18 @@ const ResetPassword = () => {
         </div>:
         <div className={styles.main}>
             <div className={styles.leftSide}>
-                <img src={iIcon} alt="icon" />
+                <img src="/otpImage.png" alt="icon" />
                 <h1>Reset Password</h1>
                 <div className={styles.inputField}>
-                    <img src={lock} alt="lock" />
+                    <img src="/email 2.png" alt="lock" />
                     <input type="email" placeholder="Enter Your Email" value={email} onChange={(e)=>setEmail(e.target.value)} />
                 </div>
                 <div className={styles.inputField}>
-                    <img src={lock} alt="lock" />
+                    <img src="/email 2.png" alt="lock" />
                     <input type="password" placeholder="Enter New Password" value={newPassword} onChange={(e)=>setNewPassword(e.target.value)} />
                 </div>
                 <div className={styles.inputField}>
-                    <img src={lock} alt="lock" />
+                    <img src="/email 2.png" alt="lock" />
                     <input type="password" placeholder="Confirm Your New Password" value={passwordConfirm} onChange={(e)=>setPasswordConfirm(e.target.value)} />
                 </div>
                 <button onClick={handleSubmit}>Submit</button>

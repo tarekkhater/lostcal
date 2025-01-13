@@ -31,11 +31,11 @@ const SecretCode = () => {
       </div>:
       <div className={styles.main}>
       <div className={styles.leftSide}>
-        <img src={iIcon} alt="icon" />
+        <img src="/otpImage.png" alt="icon" />
         <h1>Secret Code</h1>
         <p>Check your email , we send a secret code to you</p>
         <div className={styles.inputField}>
-          <img src={lock} alt="lock" />
+          <img src="/email 2.png" alt="lock" />
           <input type="text" placeholder="Enter Code" value={resetCode} onChange={(e)=>setResetCode(e.target.value)} />
         </div>
         <button onClick={handleSubmit}>Submit</button>

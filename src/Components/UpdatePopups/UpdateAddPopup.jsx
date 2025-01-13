@@ -77,7 +77,7 @@ const UpdateAddPopup = ({name,address,email,phoneNumber,img,id}) => {
                         </div>
                     ):(
                         <label htmlFor="upload-image" className='add-image-label'>
-                            <img src={addImage} alt='add-img' />
+                            <img src="/image-gallery 1.png" alt='add-img' />
                         </label>
                     )
                 }
