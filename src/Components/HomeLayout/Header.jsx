@@ -11,7 +11,7 @@ const Header = () => {
   const navigate=useNavigate();
   const handleLogout=()=>{
     dispatch(logoutUser(token));
-  }
+  }  
   return (
     <div className='header'>
       {
