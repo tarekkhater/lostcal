@@ -7,17 +7,17 @@ const Landing = () => {
     <div className="landing">
       <div className="container">
         <div className="img-left">
-          <img src="/src/assets/images/paint-splat.PNG" alt="img-left" />
+          <img src="/paint-splat.png" alt="img-left" />
         </div>
         <div className="content">
           <div className="title">
-            <img src="/src/assets/images/landing-title.PNG" alt="title" />
+            <img src="/landing-title.png" alt="title" />
           </div>
           <div className="text1">
             <p>In a world filled with countless uncertainties, one of the most distressing experiences is the loss of a loved one Whether it is a missing child, a disappeared family member, or a lost friend, the pain and anguish of not knowing their whereabouts can be overwhelming</p>
           </div>
           <div className="glass">
-            <img src="/src/assets/images/glasses.PNG" alt="glass" />
+            <img src="/glasses.png" alt="glass" />
           </div>
           <div className="btn">
             <Link to="/find-the-lost">find the lost</Link>
@@ -26,13 +26,13 @@ const Landing = () => {
             <p>We help families reunite and work to find lost people and find out what they looked like over the years</p>
           </div>
           <div className="images">
-            <img src="/src/assets/images/magnifying-glass.PNG" alt="img1" />
-            <img src="/src/assets/images/missing-person.PNG" alt="img2" />
-            <img src="/src/assets/images/people.PNG" alt="img3" />
+            <img src="/magnifying-glass.png" alt="img1" />
+            <img src="/missing-person.png" alt="img2" />
+            <img src="/people.png" alt="img3" />
           </div>
         </div>
         <div className="img-right">
-          <img src="/src/assets/images/lovepik-splash-material-png-image(r).PNG" alt="img-right" />
+          <img src="/lovepik-splash-material-png-image(r).PNG" alt="img-right" />
         </div>
       </div>
     </div>
