@@ -32,7 +32,7 @@ const Landing = () => {
           </div>
         </div>
         <div className="img-right">
-          <img src="/lovepik-splash-material-png-image(r).PNG" alt="img-right" />
+          <img src="/lovepik-splash-material-png-image(r).png" alt="img-right" />
         </div>
       </div>
     </div>

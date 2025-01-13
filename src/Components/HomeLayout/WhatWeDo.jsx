@@ -7,7 +7,7 @@ function WhatWeDo() {
       <h2 className="section-header">What We Do ?</h2>
       <div className="wwd-container">
         <div className="img-dev">
-          <img src="/src/assets/images/pngtree-man-working.png" alt="" />
+          <img src="/pngtree-man-working.png" alt="" />
         </div>
         <div>
           <p>

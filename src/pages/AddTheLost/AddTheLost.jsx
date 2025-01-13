@@ -6,7 +6,6 @@ import addressImg from "../../assets/images/location 1.png"
 import title from "../../assets/images/landing-title.png"
 import dots from "../../assets/images/paint-splat-paint-splashes-design-use-abstract-vector-illus-illustration(l).png"
 import galaxy from "../../assets/images/undraw_Location_search_re_ttoj (1) 1.png"
-import emailImg from "../../assets/images/email 2.png"
 import phone from "../../assets/images/phone-call 2.png"
 import { showErrorAlert, showSuccessAlert } from '../../Components/alert&loader/alerts'
 import { useDispatch, useSelector } from 'react-redux'
@@ -82,7 +81,7 @@ function AddTheLost(){
                             </label>
                         ):(
                             <label htmlFor="upload-image" style={{ cursor: 'pointer' }}>
-                                <img src={addImg} alt='add-img'/>
+                                <img src="/image-gallery 1.png" alt='add-img'/>
                             </label>
                         )
                     }
@@ -91,29 +90,29 @@ function AddTheLost(){
                     <div className='left-input-container'>
                         <span>Name</span>
                         <div className="input-container">
-                            <img src={nameImg} alt="name" />
+                            <img src="/profile 3.png" alt="name" />
                             <input type="text" placeholder="Enter name lost person if you know " name='name' value={name} onChange={(e)=>setName(e.target.value)} />
                         </div>
                         <span>Missing Address</span>
                         <div className='input-container'>
-                            <img className="input-logo" src={addressImg} alt="address" />
+                            <img className="input-logo" src="/location 1.png" alt="address" />
                             <textarea name="address" id="" cols="30" rows="10" placeholder="Enter Address that you found  the lost person "  value={address} onChange={(e)=>setAddress(e.target.value)}></textarea>
                         </div>
                     </div>
                 </div>
                 {<div className='right'>
                     <div className='images'>
-                        <img src='/src/assets/images/images.PNG' alt='images' />
+                        <img src='/images.PNG' alt='images' />
                     </div>
                     <div className='right-input-container'>
                         <span>Contact mail</span>
                         <div className='input-container'>
-                            <img className="input-logo" src={emailImg} alt="email" />
+                            <img className="input-logo" src="/email 2.png" alt="email" />
                             <input type="email" placeholder="Enter contact mail" name='email' value={email} onChange={(e)=>setEmail(e.target.value)} />
                         </div>
                         <span>Contact number</span>
                         <div className='input-container'>
-                            <img className="input-logo" src={phone} alt="phone" />
+                            <img className="input-logo" src="/phone-call 2.png" alt="phone" />
                             <input type="text" placeholder="Enter contact number " name='phoneNumber' value={phoneNumber} onChange={(e)=>setPhoneNumber(e.target.value)} pattern="^01[0125][0-9]{8}" />
                         </div>
                     </div>

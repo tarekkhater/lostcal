@@ -6,8 +6,8 @@ function Services() {
   return (
     <div className="container2">
       <div id="services" className="services">
-        <img src="/src/assets/images/light-blue-sky.png" className="services-img-right" />
-        <img src="/src/assets/images/light-blue-sky.png" className="services-img-left" />
+        <img src="/light-blue-sky.png" className="services-img-right" />
+        <img src="/light-blue-sky.png" className="services-img-left" />
         <h2 className="section-header">Our Services</h2>
         <div className="cards-container">
           <div>

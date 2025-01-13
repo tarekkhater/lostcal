@@ -33,23 +33,23 @@ const Login = () => {
                 
             <div className='login-container'>
                 <div className='images'>
-                    <img className='ellipse' src='/src/assets/images/Ellipse 3.png' alt='ellipse' />
-                    <img className='curve' src='/src/assets/images/Rectangle 23.png' alt='curve' />
-                    <img className='title' src='/src/assets/images/landing-title.png' alt='title' />
-                    <img className='dots' src='/src/assets/images/lovepik-splash-material-png-image(r).png' alt='dots' />
-                    <img className='phone' src='/src/assets/images/phone.png' alt='phone' />
+                    <img className='ellipse' src='/Ellipse 3.png' alt='ellipse' />
+                    <img className='curve' src='/Rectangle 23.png' alt='curve' />
+                    <img className='title' src='/landing-title.png' alt='title' />
+                    <img className='dots' src='/lovepik-splash-material-png-image(r).png' alt='dots' />
+                    <img className='phone' src='/phone.png' alt='phone' />
                 </div>
                 <form className='form' onSubmit={handleSubmit}>
                     <div className='man-img'>
-                        <img src='/src/assets/images/man 1.png' alt='man'/>
+                        <img src='/man 1.png' alt='man'/>
                     </div>
                     <h1>Welcome !</h1>
                     <div className='input-container'>
-                        <img src='/src/assets/images/email.png'/>
+                        <img src='/email.png'/>
                         <input type='email' required placeholder='Enter your email' name='email' value={email} onChange={(e)=>setEmail(e.target.value)} />
                     </div>
                     <div className='input-container' style={{marginBottom:"1rem"}}>
-                        <img src='/src/assets/images/password.png'/>
+                        <img src='/password.png'/>
                         <input type='password' placeholder='Enter your password' name='password' value={password} onChange={(e)=>setPassword(e.target.value)}   />
                     </div>
                     <Link to="/forgot-password" className='forget' style={{marginBottom:"1rem"}}>forgot password ?</Link>
